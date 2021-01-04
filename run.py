@@ -1,10 +1,14 @@
 # 依赖pycrypto库
+# Crypto.Cipher 使用下面的安装
+# pip3 install pycryptodome
 import binascii
 import struct
 import base64
 import json
 import os
 from Crypto.Cipher import AES
+
+
 def dump(file_path):
     core_key = binascii.a2b_hex("687A4852416D736F356B496E62617857")
     meta_key = binascii.a2b_hex("2331346C6A6B5F215C5D2630553C2728")
